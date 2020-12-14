@@ -12,7 +12,9 @@ utilities:
     - yarn
 
 utility-sources:
-  yarn: https://github.com/mrlescodes/vvv-yarn-utility
+  yarn:
+    repo: https://github.com/mrlescodes/vvv-yarn-utility.git
+    branch: main
 ```
 
 For more see the [official VVV documentation on utilities](https://varyingvagrantvagrants.org/docs/en-US/utilities/).
