@@ -3,7 +3,7 @@
 echo "Installing Yarn"
 
 # Configure the repository
-sudo apt-key adv --fetch-keys https://dl.yarnpkg.com/debian/pubkey.gpg
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | (OUT=$(apt-key add - 2>&1) || echo $OUT)
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 # Update packages and install yarn
